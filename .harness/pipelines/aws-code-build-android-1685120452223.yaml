@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_aws_code_build_android_1685120459663
+  name: Build aws-code-build-android
+  orgIdentifier: default
+  projectIdentifier: vegetaables
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github
+        repoName: laluondru/aws-code-build-android
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
