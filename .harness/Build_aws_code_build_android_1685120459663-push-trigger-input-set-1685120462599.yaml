@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_aws_code_build_android_1685120459663-push-trigger-input-set
+  identifier: Build_aws_code_build_android_1685120459663pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: vegetaables
+  pipeline:
+    identifier: Build_aws_code_build_android_1685120459663
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
