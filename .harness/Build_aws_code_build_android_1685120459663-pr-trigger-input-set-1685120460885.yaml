@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_aws_code_build_android_1685120459663-pr-trigger-input-set
+  identifier: Build_aws_code_build_android_1685120459663prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: vegetaables
+  pipeline:
+    identifier: Build_aws_code_build_android_1685120459663
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
